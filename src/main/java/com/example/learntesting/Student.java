@@ -32,11 +32,10 @@ public class Student {
 
     private Date createAt = new Date(new java.util.Date().getTime());
 
-    public Student(String fullName, Gender gender, String username, String password, Date createAt) {
+    public Student(String fullName, Gender gender, String username, String password) {
         this.fullName = fullName;
         this.gender = gender;
         this.username = username;
         this.password = password;
-        this.createAt = createAt;
     }
 }

@@ -2,12 +2,14 @@ package com.example.learntesting;
 
 import com.example.learntesting.exceptions.DuplicatedException;
 import com.example.learntesting.exceptions.NotFoundException;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class StudentService {
     @Autowired
     private StudentRepository studentRepository;
